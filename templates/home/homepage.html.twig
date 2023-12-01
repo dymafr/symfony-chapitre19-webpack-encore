@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+
+{% block stylesheets %}
+  {{ parent() }}
+  {{ encore_entry_link_tags('homepage') }}
+{% endblock %}
+
+{% block javascripts %}
+  {{ parent() }}
+  {{ encore_entry_script_tags('homepage') }}
+{% endblock %}
+
+{% block body %}
+  <h1>Dans Homepage </h1>
+  <div id="app">${message}$</div>
+{% endblock %}
